@@ -1,0 +1,3 @@
+@function media($min, $max) {
+  @return only screen and (min-width: #{$min}) and (max-width: #{$max});
+}

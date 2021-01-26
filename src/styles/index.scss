@@ -1,0 +1,10 @@
+@import 'normalize';
+@import 'mixins/gradients';
+@import 'theme';
+
+html,
+body,
+#root {
+  height: 100%;
+  overflow-x: hidden;
+}

@@ -1,0 +1,48 @@
+.connect {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Mulish', sans-serif;
+  justify-content: space-between;
+  height: 100vh;
+
+  &__content {
+    padding: 50px 30px;
+    box-sizing: border-box;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__logo {
+    width: 30%;
+    min-width: 250px;
+    align-self: center;
+    margin-bottom: 50px;
+  }
+
+  &__placeholder {
+    background: url('../../icons/placeholder.svg');
+    min-height: 20vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .button_primary {
+    background: #3578e5;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: #3578e5;
+    }
+  }
+}
+
+.loading {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

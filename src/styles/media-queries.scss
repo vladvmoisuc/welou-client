@@ -1,0 +1,9 @@
+@import "./breakpoints";
+@import "./functions/media-queries";
+
+$phone-screen: media(0, $phone);
+$phone-screen-small: media(0, $phone-small);
+$phone-screen-wide: media(0, $phone-wide);
+$tablet-screen: media($phone, $tablet);
+$laptop-screen: media($tablet, $laptop);
+$desktop-screen: media($laptop, $desktop);

@@ -1,0 +1,25 @@
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px 0 20px;
+
+  &__left-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__name {
+    font-size: 22px;
+    margin-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
+  }
+
+  &__icon {
+    width: 30px;
+  }
+}

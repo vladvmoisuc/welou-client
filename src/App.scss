@@ -1,0 +1,277 @@
+@import '~antd/dist/antd.css';
+
+html,
+body,
+#root,
+.app {
+  min-height: 100vh;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  background: #fafafa;
+
+  &__containers {
+    background: white;
+    box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.1);
+    width: 40%;
+
+    @media screen and (max-width: 960px) {
+      width: 100%;
+    }
+  }
+}
+
+.walkthrough-page {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+    margin: 20px 0;
+    padding-right: 20px;
+  }
+
+  &__logo {
+    width: 10%;
+    min-width: 125px;
+    align-self: center;
+  }
+
+  .btn_primary {
+    align-items: center;
+    background: #fabf3c;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    font-weight: 800;
+    height: auto;
+    justify-content: center;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      box-shadow: none;
+      background: #fabf3c;
+      color: white;
+      border: none;
+    }
+  }
+
+  h1.ant-typography {
+    font-weight: bold;
+    font-size: 38px;
+  }
+
+  div.ant-typography {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Mulish', sans-serif;
+  height: 100vh;
+  justify-content: space-between;
+  padding: 25px 25px;
+  box-sizing: border-box;
+}
+
+.content-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+}
+
+.pill {
+  background: white;
+  padding: 5px 10px;
+  margin: 5px 10px 5px 0;
+  border-radius: 3px;
+  font-size: 12px;
+  border: 2px solid #fabf3c;
+  white-space: nowrap;
+  font-weight: 500;
+
+  &:hover,
+  &_active {
+    cursor: pointer;
+    background: #fabf3c;
+    color: white;
+  }
+
+  &_closable {
+    span {
+      padding: 10px 0 10px 10px;
+      font-size: 14px;
+    }
+  }
+
+  &_full-width {
+    display: block;
+  }
+
+  &_large {
+    padding: 10px 20px;
+  }
+
+  &:disabled {
+    &:hover {
+      background: transparent;
+      color: black;
+      cursor: initial;
+    }
+  }
+
+  &_orange {
+    border-color: #fd8930;
+  }
+
+  &_yellow {
+    border-color: #fce010;
+  }
+
+  &_pink {
+    border-color: #e03486;
+  }
+
+  &_purple {
+    border-color: #2b3be3;
+  }
+}
+
+.link {
+  font-size: 16px;
+  color: #282727;
+  font-weight: 500;
+
+  &:hover,
+  &:focus {
+    color: #fd8930;
+    text-decoration: underline;
+  }
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 46px;
+}
+
+.paragraph {
+  font-size: 20px;
+  margin-bottom: 8px;
+  width: 100%;
+
+  &_medium {
+    font-size: 16px;
+  }
+}
+
+.bolder {
+  font-weight: 500;
+}
+
+.input {
+  margin-top: 10px;
+  box-shadow: 0px 3.35526px 10.0658px rgba(0, 0, 0, 0.1);
+}
+
+.autocomplete {
+  border-radius: 3px;
+  box-shadow: 0px 3.35526px 10.0658px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.button_primary {
+  align-items: center;
+  background: #fabf3c;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+  color: white;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row-reverse;
+  font-weight: 700;
+  height: auto;
+  justify-content: center;
+  padding: 10px 10px;
+  font-size: 18px;
+  border: none;
+  margin-top: 10px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: none;
+    background: #fabf3c;
+    color: white;
+    border: none;
+  }
+}
+
+.button {
+  &__icon {
+    height: 35px;
+    margin-left: 5px;
+  }
+}
+
+.image {
+  box-shadow: 0px 2.5px 7.5px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  &_small-centered {
+    width: 40%;
+    margin: 0 auto;
+  }
+}
+
+.upload .ant-upload {
+  width: 100%;
+}
+
+.description-box {
+  display: flex;
+  align-items: center;
+
+  .image {
+    margin-right: 10px;
+  }
+}
+
+.textarea {
+  width: 100%;
+}
+
+.button_red {
+  background: #fa473c !important;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: #fa473c;
+  }
+}

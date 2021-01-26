@@ -1,0 +1,22 @@
+.bio {
+  &__header {
+    flex-direction: column;
+  }
+
+  .paragraph {
+    margin-top: 30px;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .error {
+    font-size: 14px;
+    color: red;
+  }
+
+  .ant-checkbox-wrapper + .ant-checkbox-wrapper {
+    margin-left: 0;
+  }
+}

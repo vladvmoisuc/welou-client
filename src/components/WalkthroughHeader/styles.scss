@@ -1,0 +1,17 @@
+.walkthrough-header {
+  display: flex;
+  flex-direction: column;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__logo {
+    width: 10%;
+    min-width: 125px;
+    align-self: center;
+  }
+}

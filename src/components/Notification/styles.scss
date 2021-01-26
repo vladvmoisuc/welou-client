@@ -1,0 +1,36 @@
+.notification {
+  padding: 5px;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    color: black;
+    transition: 0.1s all linear;
+
+    &:hover {
+      color: #fabf3c;
+    }
+
+    .image {
+      width: 50px;
+      object-fit: cover;
+      height: 50px;
+    }
+
+    .paragraph {
+      margin: 0 0 0 10px;
+      font-size: 18px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+
+    button {
+      width: 100%;
+    }
+  }
+}

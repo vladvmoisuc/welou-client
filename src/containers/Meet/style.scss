@@ -1,0 +1,37 @@
+.meet {
+  justify-content: flex-start !important;
+  padding: 0 !important;
+
+  &-content {
+    padding-left: 20px;
+  }
+
+  .switch {
+    width: 150px;
+    height: 50px;
+    padding: 5px;
+    border: 0;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &_on {
+      justify-content: flex-end;
+      background: #fabf3c;
+    }
+  }
+
+  .circle {
+    height: 40px;
+    width: 40px;
+    background: white;
+    border-radius: 50px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  &_leave-conversation {
+    margin-top: 50px;
+    text-transform: underline;
+  }
+}

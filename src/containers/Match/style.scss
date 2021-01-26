@@ -1,0 +1,63 @@
+.match {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 !important;
+
+  &__profile-card {
+    margin: 0 !important;
+    padding: 0 20px;
+  }
+
+  &__buttons {
+    display: flex;
+    padding: 10px 20px;
+  }
+
+  @media screen and (max-width: 300px) {
+    &__buttons {
+      flex-direction: column-reverse;
+    }
+
+    .button_primary {
+      margin: 7.5px 0 !important;
+    }
+  }
+
+  .button_primary:nth-child(1) {
+    margin-right: 10px;
+    margin-top: 0;
+  }
+
+  .button_primary:nth-child(2) {
+    margin-left: 10px;
+    margin-top: 0;
+  }
+
+  .button_red {
+    background: #fa473c !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: #fa473c;
+    }
+  }
+}
+
+.header {
+  margin-bottom: 20px;
+  padding: 20px 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo_wordmark {
+    width: 150px;
+  }
+
+  &__logo_icon {
+    width: 40px;
+  }
+}
